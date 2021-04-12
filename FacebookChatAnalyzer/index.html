@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceBook Chat Analyzer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="styleSheet" href="./style/style.css"></link>
+</head>
+<body>
+    
+<div class="container">
+  <h2>Chat Analyzer</h2>
+  <p>The tables below contain the data obtained by chat analysis</p>  <br>
+  <p>Chat Members : <span id="groupName"></span></p>          
+  <table class="table table-bordered" id="memberTable">
+    <thead>
+      <tr>
+        <th>Num.</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Group</th>
+      </tr>
+    </thead>
+  </table><br>
+
+  <p>The number of messages sent</p> 
+   <table class="table table-bordered" id="chatStatTable">
+    <thead>
+      <tr>
+        <th>Members</th>
+        <th>Numb Of Send Messages </th>
+        <th>Percent</th>
+        <th>Total Messages</th>
+      </tr>
+    </thead>
+  </table><br>
+
+  <p>Percentage by number of words written in the group</p> 
+   <table class="table table-bordered" id="chatWordTable">
+    <thead>
+      <tr>
+        <th>member</th>
+        <th>Total Word</th>
+        <th>Percent By Word</th>
+        <th>Top 100 Word by member</th>
+        <th>Total writen word in chat</th>
+      </tr>
+    </thead>
+  </table>
+
+</div>
+
+    <script src="analyzer/fbChatAnalyzer.js"></script>
+</body>
+</html>
