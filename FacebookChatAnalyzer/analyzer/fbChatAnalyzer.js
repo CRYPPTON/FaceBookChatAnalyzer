@@ -2,7 +2,7 @@
 const encode_utf8 = (s) => unescape(encodeURIComponent(s));
 const decode_utf8 = (s) => decodeURIComponent(escape(s));
 
-const FILE = "messageMrk.json";  // set file 
+const FILE = "FILE_NAME.JSON";  // set file 
 
 $(document).ready(function(){
       $.getJSON("../chat/"+FILE, (result) => {
