@@ -8,4 +8,5 @@ Facebook Chat Analyzer - JavaScript
 5. Open <code> FacebookChatAnalyzer/analyzer/fbChatAnalyzer.js </code> file and set <code>FILE</code> variable
 6. Run : *USER* /FacebookChatAnalyzer-master/<code>node fbchatAnalyzer </code>
 
-![image](https://user-images.githubusercontent.com/34587275/114449548-25d53080-9bd5-11eb-8257-6b4704d58eb7.png)
+![image](https://user-images.githubusercontent.com/34587275/127574381-1efcc333-2c6a-4222-9051-2d93691bd8fc.png)
+
