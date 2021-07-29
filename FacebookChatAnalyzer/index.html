@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="styleSheet" href="./style/style.css"></link>
 </head>
 <body>
@@ -15,7 +16,7 @@
   <h2>Chat Analyzer</h2>
   <p>The tables below contain the data obtained by chat analysis</p>  <br>
   <p>Chat Members : <span id="groupName"></span></p>          
-  <table class="table table-bordered" id="memberTable">
+  <table class="fl-table table-bordered" id="memberTable">
     <thead>
       <tr>
         <th>Num.</th>
@@ -27,7 +28,7 @@
   </table><br>
 
   <p>The number of messages sent</p> 
-   <table class="table table-bordered" id="chatStatTable">
+   <table class="fl-table table-bordered" id="chatStatTable">
     <thead>
       <tr>
         <th>Members</th>
@@ -39,7 +40,7 @@
   </table><br>
 
   <p>Percentage by number of words written in the group</p> 
-   <table class="table table-bordered" id="chatWordTable">
+   <table class="fl-table table-bordered" id="chatWordTable">
     <thead>
       <tr>
         <th>member</th>
@@ -50,9 +51,25 @@
       </tr>
     </thead>
   </table>
+  
+  
+  <section>
+    <div class="pieID pie">
+      
+    </div>
+    <ul id="chart" class="pieID legend">
+  
+    </ul>
+  </section>
 
-</div>
 
-    <script src="analyzer/fbChatAnalyzer.js"></script>
+
+  <script src="analyzer/fbChatAnalyzer.js"></script>
+    
+    
+  
+
+    
+    
 </body>
 </html>
